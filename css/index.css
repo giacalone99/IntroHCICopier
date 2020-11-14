@@ -1,0 +1,40 @@
+.center-div {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.filled-dot {
+    background-color: #000;
+}
+
+.number-btn {
+    text-align: center;
+    box-shadow: none;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin-right: 15px;
+}
+
+.last-number {
+    margin-right: 0;
+}
+
+.last-row {
+    margin-left: 80px;
+}
+
+.number-btn i.material-icons {
+    color: #000;
+}
+
