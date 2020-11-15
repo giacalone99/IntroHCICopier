@@ -1,12 +1,13 @@
 $(document).ready(function() {
+    // $("#num-copies").empty();
     
     $(".number-btn").not("#delete-num").click(function(e) {
-        var numCopies = $("#num-copies").text();
+        var numCopies = $("#num-copies").find('script').remove().end().text();
         $("#num-copies").text(numCopies + e.target.text);
     });
 
     $("#delete-num").click(function() {
-        var numCopies = $("#num-copies").text();
+        var numCopies = $("#num-copies").find('script').remove().end().text();
         if(numCopies.length > 0) {
             $("#num-copies").text(numCopies.substring(0, numCopies.length - 1));
         }
@@ -21,7 +22,7 @@ $(document).ready(function() {
 });
 
 function goToSetting(url) {
-    window.location.replace(url + "?" + window.location.search.substring(1));
+    window.location.replace(url + "?" + "numCopies=" + $("#num-copies").find('script').remove().end().text() + "&" + window.location.search.substring(1));
 }
 
 function getUrlParam(sParam) {
