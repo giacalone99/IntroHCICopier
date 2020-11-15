@@ -17,7 +17,7 @@
         <div class="container">
             <div>
                 <div class="row center-div">
-                    <h6 class="inline"># of copies: </h6><span id="num-copies"><script>document.write(getUrlParam("numCopies") || "1")</script></span>
+                    <h5 class="inline"># of copies: <span id="num-copies"><script>document.write(getUrlParam("numCopies") || "1")</script></span></h5>
                 </div>
                 <div class="row center-div">
                     <a class="btn-floating number-btn waves-effect">1</a>
@@ -44,7 +44,7 @@
                     <tr>
                         <td class="right-align"><h5 class="inline">Sides: </h5></td>
                         <td><a href="javascript:goToSetting('sides.html')" class="btn setting-btn btn-flat waves-effect">
-                            <script>document.write(getUrlParam("sides") || "1 to 1")</script>
+                            <script>document.write(getSidesString())</script>
                         </a></td>
                     </tr>
                     <tr>
@@ -66,7 +66,7 @@
                         </a></td>
                     </tr>
                 </table>
-                <div class="row right-align">
+                <div class="row right-align action-buttons">
                     <a href="index.html" class="btn btn-flat waves-effect">Quit</a>
                     <a id="print-btn" class="btn btn-large waves-effect waves-light">GO</a>
                 </div>

@@ -35,3 +35,14 @@ function getUrlParam(sParam) {
     }
     return "";
 }
+
+function getSidesString() {
+    var sourceSides = getUrlParam("source-sides");
+    var copiesSides = getUrlParam("copies-sides");
+    if(sourceSides === "" || copiesSides === "") {
+        return "1 to 1";
+    }
+    else {
+        return sourceSides + " to " + copiesSides;
+    }
+}

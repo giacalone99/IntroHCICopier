@@ -16,7 +16,20 @@
     margin: 20px;
 }
 
+.flex-div {
+    display: flex;
+    align-items: center;
+}
+
+.flex-item {
+    margin: 20px;
+}
+
+#arrow {
+    font-size: 48pt;
+}
+
 span.radio-label {
-    font-size: 20px !important;
+    font-size: 30px !important;
     color: #000;
 }

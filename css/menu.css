@@ -44,6 +44,7 @@
 .container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .right-box {
@@ -54,4 +55,8 @@
 
 .settings-table tr {
     border: none;
+}
+
+.action-buttons {
+    margin-top: 30px;
 }

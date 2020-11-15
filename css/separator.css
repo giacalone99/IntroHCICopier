@@ -16,7 +16,25 @@
     margin: 20px;
 }
 
-span.radio-label {
+.flex-div {
+    display: flex;
+    align-items: center;
+}
+
+.flex-item {
+    padding: 0 50px;
+}
+
+.flex-item:last-child {
+    border-left: 1px solid lightgray;
+}
+
+span.source-radio-label {
     font-size: 20px !important;
+    color: #000;
+}
+
+span.toggle-radio-label {
+    font-size: 30px !important;
     color: #000;
 }

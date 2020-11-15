@@ -11,12 +11,21 @@
     width: max-content;
 }
 
+.flex-div {
+    display: flex;
+    align-items: center;
+}
+
 .btn-flat {
     border: 1px solid #000;
     margin: 20px;
 }
 
-span.radio-label {
-    font-size: 20px !important;
-    color: #000;
+.big-icon {
+    font-size: 40px;
+    margin: 0 20px;
+}
+
+.range-field {
+    width: 400px;
 }
