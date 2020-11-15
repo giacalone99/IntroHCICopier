@@ -43,19 +43,27 @@
                 <table class="settings-table">
                     <tr>
                         <td class="right-align"><h5 class="inline">Sides: </h5></td>
-                        <td><a href="sides.html" class="btn setting-btn btn-flat waves-effect">1 to 1</a></td>
+                        <td><a href="javascript:goToSetting('sides.html')" class="btn setting-btn btn-flat waves-effect">
+                            <script>document.write(getUrlParam("sides") || "1 to 1")</script>
+                        </a></td>
                     </tr>
                     <tr>
                         <td class="right-align"><h5 class="inline">Paper Source: </h5></td>
-                        <td><a href="paper.html" class="btn setting-btn btn-flat waves-effect">Tray A</a></td>
+                        <td><a href="javascript:goToSetting('paper.html')" class="btn setting-btn btn-flat waves-effect">
+                            <script>document.write(getUrlParam("paper") || "Tray A")</script>
+                        </a></td>
                     </tr>
                     <tr>
                         <td class="right-align"><h5 class="inline">Separator: </h5></td>
-                        <td><a href="separator.html" class="btn setting-btn btn-flat waves-effect">None</a></td>
+                        <td><a href="javascript:goToSetting('separator.html')" class="btn setting-btn btn-flat waves-effect">
+                            <script>document.write(getUrlParam("separator") || "None")</script>
+                        </a></td>
                     </tr>
                     <tr>
                         <td class="right-align"><h5 class="inline">Brightness: </h5></td>
-                        <td><a href="brightness.html" class="btn setting-btn btn-flat waves-effect">5</a></td>
+                        <td><a href="javascript:goToSetting('brightness.html')" class="btn setting-btn btn-flat waves-effect">
+                            <script>document.write(getUrlParam("brightness") || "5")</script>
+                        </a></td>
                     </tr>
                 </table>
                 <div class="row right-align">
