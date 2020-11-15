@@ -8,5 +8,5 @@ $(document).ready(function() {
 
 async function waitAndRedirect() {
     await sleep(2000);
-    window.location.replace("menu.html");
+    window.location.replace("menu.html" + window.location.search);
 }

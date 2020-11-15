@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    // $("#num-copies").empty();
     
     $(".number-btn").not("#delete-num").click(function(e) {
         var numCopies = $("#num-copies").find('script').remove().end().text();
@@ -15,7 +14,7 @@ $(document).ready(function() {
 
     $("#print-btn").click(function() {
         if($("#num-copies").text().length > 0) {
-            window.location.replace("printing.html");
+            goToSetting("printing.html");
         }
     });
 
