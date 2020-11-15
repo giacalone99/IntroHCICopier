@@ -11,17 +11,8 @@
     width: max-content;
 }
 
-.dot {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    border: 1px solid #000;
-    display: inline-block;
-    margin-right: 8px;
-}
-
-.filled-dot {
-    background-color: #000;
+.inline {
+    display: inline;
 }
 
 .number-btn {
@@ -38,10 +29,29 @@
 }
 
 .last-row {
-    padding-left: 75px;
+    padding-left: 60px;
 }
 
 .number-btn i.material-icons {
     color: #000;
 }
 
+.setting-btn {
+    border: 1px solid #000;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.right-box {
+    margin-left: 50px;
+    padding-left: 50px;
+    border-left: 1px solid lightgray;
+}
+
+.settings-table tr {
+    border: none;
+}
